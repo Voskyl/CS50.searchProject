@@ -2,13 +2,30 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            .row > div {
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                </div>
+                <div class="col-3">
+                    <button onclick="document.location='image_search.html'">Image search</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="document.location='advanced_search.html'">Advanced search</button>
+                </div>
+            </div>
+        </div>
         <form action="https://www.google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
-        <button onclick="document.location='image_search.html'">Image search</button>
-        <button onclick="document.location='advanced_search.html'">Advanced search</button>
     </body>
 </html>
