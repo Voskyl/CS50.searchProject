@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Image search</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <title>uImage</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Image search</h1>
+        <div align="right">
+            <br>
+            <a href="index.html">Google search</a>
+            &nbsp;&nbsp;
+            <a href="advanced_search.html">Advanced search</a>
+            &nbsp;
+        </div>
+        <div align="center" style="padding-top: 200px;">
+            <img src="figures/logo_image.png" alt="google" width="300">
+        </div>
+        <div align="center">
+            <form action="https://www.google.com/search">
+                <input id="input1" type="text" name="q">
+                <br>
+                <input type="hidden" name="udm" value="2">
+                <input id="input2" type="submit" value="Image search">
+            </form>
+        </div>
     </body>
 </html>
